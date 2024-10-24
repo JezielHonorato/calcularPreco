@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="formulario">
+        <h1>Posto de combutíveis IFRN</h1>
+        <div>
+            <label for="alcool">Preço do alcool </label>
+            <input type="number" name="alcool" id="alcool" #alc>
+        </div>
+        <div>
+            <label for="gasolina">Preço da gasolina </label>
+            <input type="numer" name="gasolina" id="gasolina" #gas>
+        </div> <br>
+        <div>
+            <input type="button" value="Calcular" (click)="calcular(+alc.value, +gas.value)">
+        </div>
+    </form>
+</div>
